@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<head>
+    <title>demo</title>
+</head>
+<body>
+    <ul>
+        <li>{{name}}</li>
+        {{#hello}}
+            <li>{{.}}</li>
+        {{/hello}}
+    </ul>
+</body>

@@ -6,10 +6,6 @@ const fs = require('fs');
 var router = express.Router();
 
 router.get("/test", async (req, res) => {
-    /*
-    res.setHeader('Content-Type', 'application/pdf');
-    res.send(pdf)
-    */
     const html = await processTemplate('/templates/template', {
       name: '홍길동',
       hello: '안녕하세요'
